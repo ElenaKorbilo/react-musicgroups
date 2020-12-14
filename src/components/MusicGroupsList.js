@@ -1,12 +1,13 @@
 import React from "react";
-import MusicGroup from "./MusicGroup";
 
-export default function MusicGroupList(props) {
+export default function MusicGroup(props) {
   return (
-    <div>
-      {props.data.map(item => (
-        <MusicGroup {...item} />
-      ))}
-    </div>
+    <>
+      <div>
+        <h3>{props.name}</h3>
+        <img src={props.img} alt="" />
+        <p>{props.participants}</p>
+      </div>
+    </>
   );
 }
